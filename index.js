@@ -7,7 +7,7 @@ const port = process.env.PORT || 4000
 
 server.use(express.json())
 server.use("/", welcomeRouter)
-server.use("/messages", messagesRouter)
+server.use("/messages", messagesRouter)  // PREFIX IS SPECIFIED
 
 server.use((err, req, res, next) => {
 	console.log(err)
